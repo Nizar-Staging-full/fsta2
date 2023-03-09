@@ -1,0 +1,12 @@
+
+name: run on main
+on:
+  push:
+    branches: [main]
+  
+    
+jobs:
+  dummy_test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Make renovate automerge excuted'
