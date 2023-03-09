@@ -1,0 +1,13 @@
+
+name : pass Minors
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'minor/**'
+
+jobs:
+  dummy_test:
+    runs-on: ubuntu-latest
+    steps:
+       - run: echo 'Make renovate automerge excuted'
